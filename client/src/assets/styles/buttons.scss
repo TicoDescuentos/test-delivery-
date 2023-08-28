@@ -1,0 +1,44 @@
+.btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+
+  &:disabled {
+    background-color: $grey;
+    cursor: not-allowed;
+  }
+}
+
+.btn-primary {
+  @extend .btn;
+  background-color: $primary;
+  color: $white;
+}
+
+.btn-secondary {
+  @extend .btn;
+  background-color: $secondary;
+  color: $black;
+}
+
+.btn-outline {
+  @extend .btn;
+  border: 1px solid $primary;
+  color: $primary;
+  background-color: $white;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: rgb(239, 246, 254);
+    transition: all 0.3s ease-in-out;
+  }
+}
+.btn-danger {
+  @extend .btn;
+  background-color: $red;
+  color: $white;
+}

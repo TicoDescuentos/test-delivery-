@@ -1,0 +1,20 @@
+.Featured {
+  padding: 30px 0;
+  &_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-weight: bold;
+    }
+    img {
+      width: 152px;
+      height: 84px;
+      object-fit: contain;
+    }
+    @media all and (max-width: 769px) {
+      flex-wrap: wrap;
+      padding: 0 10px;
+    }
+  }
+}
